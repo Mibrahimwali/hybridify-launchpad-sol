@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-hybridify-dark-900 py-10 border-t border-gray-800">
@@ -9,6 +10,10 @@ const Footer = () => {
                 src="/hybridify-logo.png" 
                 alt="Hybridify Logo" 
                 className="h-8 w-auto mr-3"
+                onError={(e) => {
+                  console.error('Footer logo failed to load', e);
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <h2 className="text-2xl font-bold">Hybridify</h2>
             </div>
@@ -61,9 +66,6 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
             </ul>
           </div>
-        </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© 2025 Hybridify. All rights reserved.</p>
         </div>
       </div>
     </footer>

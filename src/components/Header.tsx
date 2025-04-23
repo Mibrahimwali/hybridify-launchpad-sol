@@ -18,6 +18,10 @@ const Header = () => {
             src="/hybridify-logo.png" 
             alt="Hybridify Logo" 
             className="h-10 w-auto mr-3"
+            onError={(e) => {
+              console.error('Logo failed to load', e);
+              e.currentTarget.style.display = 'none';
+            }}
           />
         </div>
         
