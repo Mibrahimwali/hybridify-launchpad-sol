@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Menu } from 'lucide-react';
@@ -20,7 +19,9 @@ const Header = () => {
             className="h-10 w-auto mr-3"
             onError={(e) => {
               console.error('Logo failed to load', e);
-              e.currentTarget.style.display = 'none';
+              const img = e.currentTarget;
+              img.src = `https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=200&h=200&fit=crop`;
+              img.alt = 'Placeholder Logo';
             }}
           />
         </div>
