@@ -1,5 +1,5 @@
 
-import { ArrowRight, Cubes, Coins, Rocket } from 'lucide-react';
+import { ArrowRight, Package, Coins, Rocket } from 'lucide-react';
 
 const ServiceCard = ({ icon, title, description, checkItems, linkColor }) => {
   return (
@@ -35,7 +35,7 @@ const ServicesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <ServiceCard 
-            icon={<Cubes size={28} className="text-white" />}
+            icon={<Package size={28} className="text-white" />}
             title="Hybrid NFTs with MPL-Hybrid"
             description="Our flagship service helps you create and launch revolutionary hybrid tokens using Metaplex's MPL-Hybrid standard, combining NFT uniqueness with fungible token utility."
             checkItems={[
