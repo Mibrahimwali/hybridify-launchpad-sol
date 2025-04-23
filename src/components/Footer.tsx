@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-hybridify-dark-900 py-10 border-t border-gray-800">
@@ -6,6 +5,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center mb-4">
+              <img 
+                src="/hybridify-logo.png" 
+                alt="Hybridify Logo" 
+                className="h-8 w-auto mr-3"
+              />
               <h2 className="text-2xl font-bold">Hybridify</h2>
             </div>
             <p className="text-gray-400 mb-4">Building the future of hybrid tokens on Solana</p>

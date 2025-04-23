@@ -14,7 +14,11 @@ const Header = () => {
     <header className="bg-gradient-to-r from-blue-600 to-purple-600 py-5 px-5 sticky top-0 z-10 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <div className="text-2xl font-bold text-white">Hybridify</div>
+          <img 
+            src="/hybridify-logo.png" 
+            alt="Hybridify Logo" 
+            className="h-10 w-auto mr-3"
+          />
         </div>
         
         {/* Desktop Navigation */}
